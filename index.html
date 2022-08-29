@@ -1,0 +1,46 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="calc.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alumni+Sans+Inline+One:ital@0;1&family=Barlow+Condensed:wght@400;800&family=Indie+Flower&family=Inter:wght@400;800&family=Karla:wght@400;800&family=Patrick+Hand+SC&display=swap" rel="stylesheet">
+    <title>Calc</title>
+  </head>
+  <body>
+    <h1 class="headshadow"><span class="simple">Simple</span> <span class="calc">clac</span> </h1>
+    <form class="calculator" name="calc" action="">
+      <input class="value" type="text" name="txt" readonly=""  placeholder="0"/>
+      <span class="num clear " onclick="document.calc.txt.value=' '">c </span>
+
+      <span class="num" onclick="document.calc.txt.value += '/'">&divide;</span>
+      <span class="num" onclick="document.calc.txt.value += '*'">&times;</span>
+      <span class="num" onclick="document.calc.txt.value += '7'">7</span>
+      <span class="num" onclick="document.calc.txt.value += '8'">8</span>
+      <span class="num" onclick="document.calc.txt.value += '9'">9</span>
+      <span class="num" onclick="document.calc.txt.value += '-'">-</span>
+      <span class="num" onclick="document.calc.txt.value += '4'">4</span>
+      <span class="num" onclick="document.calc.txt.value += '5'">5</span>
+      <span class="num" onclick="document.calc.txt.value += '6'">6</span>
+      <span class="num" onclick="document.calc.txt.value += '+'">+</span>
+      <span class="num" onclick="document.calc.txt.value += '1'">1</span>
+      <span class="num" onclick="document.calc.txt.value += '2'">2</span>
+      <span class="num" onclick="document.calc.txt.value += '3'">3</span>
+      <span class="num" onclick="document.calc.txt.value += '0'">0</span>
+      <span class="num  bigv" onclick="document.calc.txt.value =document.calc.txt.value -1 "> &Del;</span>
+      <span class="num" onclick="document.calc.txt.value += '.'">.</span>
+      <span
+        class="num equal bigx"
+        onclick="document.calc.txt.value = eval
+      (calc.txt.value)"
+        >=</span
+      >
+
+    </form>
+
+<footer class="bottom">&copy; calc 2022 <span> Made by: Abdulkarim</span> </footer>
+
+  </body>
+</html>
