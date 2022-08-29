@@ -55,6 +55,7 @@ border-top:2px #6f6f6f solid;
     background: #222;
     place-items: center;
     border: 1px solid rgba(0,0,0,1);
+    cursor: pointer;
 }
 
 
