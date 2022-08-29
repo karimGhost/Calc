@@ -1,0 +1,119 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: rgb(255, 255, 255);
+}
+
+form{
+  box-shadow:   1px 5px 10px 1px rgba(0, 0, 0, 0.301);
+border-radius: 20px;
+background-color: #111;
+}
+
+input{
+    background-color:#bccd95;
+    border-bottom:black 2px solid;  
+border-top:2px #6f6f6f solid;
+    backdrop-filter: blur(25%);
+    border: none;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  box-shadow:   inset 5px 5px 10px -3px rgba(0,0,0, 0.7)  ;
+
+ 
+}
+
+.calculator{
+    position: relative;
+    display: grid;
+}
+
+.calculator .value{
+    grid-column: span 4;
+    height: 50px;
+    text-align: none;
+    border: right;
+    outline: none;
+    padding: 10px;
+    font-size: 18px;
+    color:rgba(128, 128, 128, 0.815)
+}
+
+.calculator span{
+    display: grid;
+    width: 70px;
+    height: 60px;
+    color: #fff;
+    background: #222;
+    place-items: center;
+    border: 1px solid rgba(0,0,0,1);
+}
+
+
+.calculator span:focus{
+    outline: none;
+}
+
+.calculator span:active{
+    background: rgba(128, 128, 128, 0.815);
+    color: #111;
+    box-shadow:   inset 5px 5px 10px -3px rgba(0,0,0, 0.7)  ;
+    
+}
+
+.bigv{
+    border-bottom-left-radius: 10px;
+    
+}
+
+.bigx{
+    border-bottom-right-radius: 10px;
+}
+
+.simple{
+    text-shadow: 1px 1px  rgb(201, 201, 201);
+    font-family: 'Patrick Hand SC', cursive;;
+
+}
+.calc{
+    color: white;
+    text-shadow: 1px 1px  rgba(0, 0, 0, 0.651);
+    font-family: 'Patrick Hand SC', cursive;;
+
+}
+
+.headshadow{
+    position: absolute;
+top: 50px;
+font-family: 'Patrick Hand SC', cursive;;
+}
+
+.bottom{
+    position: absolute;
+    bottom: 0;
+}
+.calculator span.clear {
+grid-column:span2;
+width:  140px;
+margin-left: -70px;
+background: crimson;
+}
+
+.calculator span.plus {
+    grid-row: span 2;
+    height: 120px;
+}
+
+.calculator span.equal{
+    background: #03ff9e;
+    width: 140px;
+    margin-right: -70px
+}
